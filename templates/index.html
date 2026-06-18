@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emergency Care AI</title>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>
+    🏥 Emergency Patient Risk Assessment and Treatment Recommendation Using AI
+</h1>
+
+<form method="POST">
+
+<label>Patient Age</label>
+<input type="number" name="age" required>
+
+<label>Heart Rate</label>
+<input type="number" name="heart_rate" required>
+
+<label>SpO₂ (%)</label>
+<input type="number" name="spo2" required>
+
+<label>Temperature (°C)</label>
+<input type="number" step="0.1" name="temperature" required>
+
+<label>Symptoms</label>
+<textarea name="symptoms" rows="5" required></textarea>
+
+<br><br>
+
+<button type="submit">
+Analyze Patient
+</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

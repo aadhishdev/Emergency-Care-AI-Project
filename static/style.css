@@ -1,0 +1,104 @@
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f8fb;
+    margin:0;
+    padding:0;
+}
+
+.container{
+    width:60%;
+    margin:auto;
+    margin-top:40px;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0px 0px 10px lightgray;
+}
+
+h1{
+    text-align:center;
+    color:#0a66c2;
+}
+
+input, textarea{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    background:#0a66c2;
+    color:white;
+    padding:12px 20px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#084d94;
+}
+
+.patient-card{
+    background:#eef7ff;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+.result-card{
+    background:white;
+    padding:20px;
+    border-left:8px solid #0a66c2;
+    border-radius:10px;
+    box-shadow:0px 0px 10px lightgray;
+}
+
+.risk-box{
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+    text-align:center;
+    padding:15px;
+    border-radius:10px;
+    margin:15px 0;
+    background:red;
+}
+.risk-box{
+    font-size:26px;
+    font-weight:bold;
+    text-align:center;
+    padding:15px;
+    border-radius:10px;
+    margin:15px 0;
+    color:white;
+}
+
+/* COLORS */
+.low{
+    background:green;
+}
+
+.medium{
+    background:orange;
+}
+
+.high{
+    background:#ff6600;
+}
+
+.critical{
+    background:red;
+}
+pre{
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+.footer-text{
+    text-align:center;
+    color:gray;
+    width:100%;
+
+}

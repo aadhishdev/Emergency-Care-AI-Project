@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Assessment Result</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>
+        🏥 Emergency Patient Risk Assessment and Treatment Recommendation Using AI
+    </h1>
+
+    <p>
+        AI-Powered Risk Assessment & Treatment Recommendation System
+    </p>
+
+    <!-- 🔴 RISK BOX -->
+    <div class="risk-box {{ risk|lower }}">
+        {{ risk }}
+    </div>
+
+    <!-- 👤 PATIENT INFO -->
+    <div class="patient-card">
+
+        <h2>Patient Information</h2>
+
+        <p><b>Age:</b> {{ age }}</p>
+        <p><b>Heart Rate:</b> {{ heart_rate }}</p>
+        <p><b>SpO₂:</b> {{ spo2 }}</p>
+        <p><b>Temperature:</b> {{ temperature }}</p>
+
+    </div>
+
+    <!-- 🧠 AI RESULT -->
+    <div class="result-card">
+
+        <h2>Assessment Report</h2>
+
+        <pre>{{ result }}</pre>
+
+    </div>
+
+    <br>
+
+    <!-- 🖨 PRINT / DOWNLOAD -->
+    <button onclick="window.print()">
+        Download / Print Report
+    </button>
+
+    <br><br>
+
+    <!-- 🔁 BACK BUTTON -->
+    <a href="/">
+        <button>Analyze Another Patient</button>
+    </a>
+
+    <br><br>
+
+    <!-- ⚠ DISCLAIMER -->
+    <p style="color:red;">
+        ⚠ AI-generated suggestions only. Not a substitute for professional medical advice.
+    </p>
+    <hr>
+    <p class="footer-text" >
+            © 2026 Lingaadhish G. All Rights Reserved.
+
+    </p>
+
+</div>
+
+</body>
+</html>
